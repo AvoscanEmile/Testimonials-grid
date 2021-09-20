@@ -2,12 +2,129 @@
 
 :root {
     --clr-violet: hsl(263, 55%, 52%);
-    --clr-darkest: hsl(219, 29%, 14%);
-    --clr-darker: hsl(217, 19%, 35%);
-    --clr-dark: hsl(210, 46%, 95%);
+    --clr-darkest-blue: hsl(219, 29%, 14%);
+    --clr-darkblue: hsl(217, 19%, 35%);
+    --clr-darkgray: hsl(210, 46%, 95%);
     --clr-gray: hsl(0, 0%, 81%);
     --clr-white: hsl(0, 0%, 100%);
     --ff: 'Barlow Semi Condensed', sans-serif;
     --fw-500: 500;
     --fw-600: 600;
+    --fs-h2: 22px;
+    --fs-p: 16px;
+}
+
+/* General Attributes */
+
+html {
+    box-sizing: border-box;
+    font-family: var(--ff);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--clr-darkgray);
+}
+
+/* Main styling */
+
+.main {
+    margin: auto;
+    width: clamp(300px, 90vw, 1250px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "c1 c1 c2 c5"
+    "c3 c4 c4 c5";
+    grid-gap: 25px;
+}
+
+.card {
+    padding: 1.5em 2.5em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__container {
+    display: flex;
+    align-items: center;
+}
+
+.card__image {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.card__info {
+    font-size: var(--fs-p);
+    font-weight: var(--fw-500);
+}
+
+.card__name,
+.card__tag {
+    margin: 0 12px;
+}
+
+.card__tag {
+    opacity: 0.5;
+}
+
+.card__description {
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-600);
+}
+
+.card__quote {
+    font-size: var(--fs-p);
+    font-weight: var(--fw-500);
+    opacity: 0.7;
+    margin-top: auto;
+}
+
+.card:first-of-type {
+    grid-area: c1;
+}
+
+.card:nth-of-type(2) {
+    grid-area: c2;
+}
+
+.card:nth-of-type(3) {
+    grid-area: c3;
+}
+
+.card:nth-of-type(4) {
+    grid-area: c4;
+}
+
+.card:last-of-type {
+    grid-area: c5;
+}
+
+.card--white {
+    background-color: var(--clr-white);
+    color: var(--clr-darkblue);
+}
+
+.card--black {
+    background-color: var(--clr-darkest-blue);
+    color: var(--clr-white);
+}
+
+.card--gray {
+    background-color: var(--clr-darkblue);
+    color: var(--clr-white);
+}
+
+.card--purple {
+    background-color: var(--clr-violet);
+    color: var(--clr-white);
 }
