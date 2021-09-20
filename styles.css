@@ -1,0 +1,13 @@
+/* Variables */
+
+:root {
+    --clr-violet: hsl(263, 55%, 52%);
+    --clr-darkest: hsl(219, 29%, 14%);
+    --clr-darker: hsl(217, 19%, 35%);
+    --clr-dark: hsl(210, 46%, 95%);
+    --clr-gray: hsl(0, 0%, 81%);
+    --clr-white: hsl(0, 0%, 100%);
+    --ff: 'Barlow Semi Condensed', sans-serif;
+    --fw-500: 500;
+    --fw-600: 600;
+}
