@@ -131,6 +131,9 @@ body {
 .card--purple {
     background-color: var(--clr-violet);
     color: var(--clr-white);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-position: 80% 5%;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 1350px) {
