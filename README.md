@@ -1,4 +1,4 @@
-# Textimonials-grid
+# Testimonials-grid
 Frontend Mentor is a website where front-end developers get a design and are asked to make it into a page to practice their skills. This repository is my approach for the following design: https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7
 
 If you want to see this repository live you can do it here: https://avoscanemile.github.io/Testimonials-grid/
